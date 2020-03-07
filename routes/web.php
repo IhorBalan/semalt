@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ViewController@index')->name('index');
+Route::get('/migrations', 'ViewController@migrations')->name('migrations');
+Route::get('/task2', 'ViewController@task2')->name('task2');
+Route::get('/task3', 'ViewController@task3')->name('task3');
+Route::get('/task4', 'ViewController@task4')->name('task4');
+
