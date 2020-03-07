@@ -20,16 +20,16 @@ class ViewController extends Controller
 
     public function task2()
     {
-        return view('migrations');
+        return view('task2');
     }
 
     public function task3()
     {
-        return view('migrations');
+        return view('task3');
     }
 
     public function task4()
     {
-        return view('migrations');
+        return view('task4');
     }
 }

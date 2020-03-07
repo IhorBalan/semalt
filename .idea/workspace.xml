@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c8bc14-7e07-4eea-bac5-a30afa459d01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/migrations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/semalt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/semalt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/task2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/task3.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/task4.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ViewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ViewController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583578009037</updated>
       <workItem from="1583578014183" duration="5203000" />
-      <workItem from="1583583347733" duration="3407000" />
+      <workItem from="1583583347733" duration="6746000" />
     </task>
     <servers />
   </component>
