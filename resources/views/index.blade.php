@@ -79,11 +79,14 @@
                 </div>
 
                 <div class="panel-body">
-                    <pre>Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
+                    <pre>public static function withApplication($num)
+{
+    return Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
             ->select('events.caption', \DB::raw('count(bids.id) as application'))
             ->groupBy('events.id')
             ->having('application', $num)
-            ->get();</pre>
+            ->get();
+}</pre>
                     @foreach(\App\Event::withApplication(0) as $event)
                         Event: <strong>{{$event->caption}}</strong>, number of application: <strong>{{$event->application}}</strong><br>
                     @endforeach
@@ -101,11 +104,14 @@
                 </div>
 
                 <div class="panel-body">
-                    <pre>Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
+                    <pre>public static function greaterThan($num)
+{
+    return Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
             ->select('events.caption', \DB::raw('count(bids.id) as application'))
             ->groupBy('events.id')
             ->having('application', '>', $num)
-            ->get();</pre>
+            ->get();
+}</pre>
                     @foreach(\App\Event::greaterThan(3) as $event)
                         Event: <strong>{{$event->caption}}</strong>, number of application: <strong>{{$event->application}}</strong><br>
                     @endforeach
@@ -123,10 +129,13 @@
                 </div>
 
                 <div class="panel-body">
-                    <pre>$numberOfMaxApplication = Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
+                    <pre>public static function maxApplication()
+{
+    $numberOfMaxApplication = Event::leftJoin('bids', 'events.id', '=', 'bids.id_event')
             ->select('events.caption', \DB::raw('count(bids.id) as application'))
             ->groupBy('events.id')->orderBy('application', 'desc')->first()->application;
-return Event::withApplication($numberOfMaxApplication);</pre>
+    return Event::withApplication($numberOfMaxApplication);
+}</pre>
                     @foreach(\App\Event::maxApplication() as $event)
                         Event: <strong>{{$event->caption}}</strong>, number of application: <strong>{{$event->application}}</strong><br>
                     @endforeach
